@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: 100;
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.weather-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.weather {
+    flex: 0 0 45%;
+}
+
+.weather-icon {
+    width: 65%;
+}
+
+.weather-hour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 26px;
+    margin: 0 5px;
+}
+
+.row {
+    padding: 13px 0;
+}
+
+.clickable.weather-click {
+    background-color: #eee;
+    border-color: #eee;
+    margin: 15px 0;
+}
+
+.clickable p{
+    margin: 0;
+}
+
+.temp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+#map {
+    width: 100%;
+    height: 250px;
+}
+
+
+/*Startpage*/
+
+.input {
+    height: 30px;
+    width: 197px;
+    margin-top: 20px;
+    border-color: black;
+}
+
+.button {
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    width: 200px;
+    color: #fff;
+    display: block;
+    border: 0;
+    margin-top: 20px;
+}
+
+.green {
+    background-color: #4caf50;
+    font-size: 16px
+}
+
+.blue {
+    background-color: #55acee;
+}
+
+.green:active {
+    background-color: green;
+}
+
+.blue:active {
+    background-color: #2196f3;
+}
+
+.start {
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+/*OVERVIEW*/
+.clickable {
+    text-align: center;
+    background-color: #eee;
+    border-color: #eee;
+    margin-bottom: 5px;
+}
+
+.hide {
+    height: 0;
+    transition: height 0.75s ease-out;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.drop-down {
+    height: 250px;
+    transition: height 0.75s ease-in;
+    overflow: auto;
+}
+
+.place {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: #b8e7ba solid 1px;
+}
+
+.place:hover {
+    background-color: #eee;
+}
+
+
+/*PLACE INFO*/
+
+.review-text {
+    text-align: left;
+    padding: 10px;
+}
+
+.review-text.fade {
+    margin: 10px 0 0 0;
+    color: lightgray;
+    margin-top: 10px;
+}
+
+#myPosition {
+    width: 100%;
+    height: 200px
+}
+
+
+.hidden-box {
+    display: none;
+}
+
+
+.menu {
+    background-color: #000;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.menu a {
+    color: #eee;
+    text-decoration: none;
+}
